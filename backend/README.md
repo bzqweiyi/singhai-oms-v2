@@ -11,23 +11,31 @@ Go 1.25 + Gin + sqlc/pgx + PostgreSQL 16。
 | `db/schema/` | PG16 DDL(由生产 SQLite 直译,结构照抄不改) |
 | `db/queries/` | sqlc 口径 SQL(静态);动态拼接集中各域 repository 层 |
 | `db/migrate/` | SQLite→PG 开发数据搬运(幂等可重跑) |
-| `docker-compose.yml` | PG16 容器(CI/生产口径);开发机无 docker 时用 conda PG 等价 |
+| `docker-compose.yml` | PG16 容器(CI/生产口径);开发机无 docker 时用 PGDG apt 装 PG16 等价 |
 
-## 开发机起 PG(无 docker 时)
+## 开发机起 PG(无 docker 时,smy 实测路径)
+
+conda 装 PG16 在磁盘紧张时会 NoSpaceLeftError 且环境半残,弃用。用 PGDG apt:
 
 ```bash
-/root/miniconda3/bin/conda create -n v2db -c conda-forge postgresql=16 -y
-chmod o+x /root /root/miniconda3 /root/miniconda3/envs /root/miniconda3/envs/v2db  # PG 拒绝 root 运行
-mkdir -p /var/lib/singhai-pg && chown nobody:nogroup /var/lib/singhai-pg
-su -s /bin/bash nobody -c "/root/miniconda3/envs/v2db/bin/initdb -D /var/lib/singhai-pg/data -E UTF8 --locale=C -U singhai"
-su -s /bin/bash nobody -c "/root/miniconda3/envs/v2db/bin/pg_ctl -D /var/lib/singhai-pg/data -o '-p 5433 -c listen_addresses=127.0.0.1' -l /var/lib/singhai-pg/log start"
-PGPASSWORD= PGUSER=singhai PGHOST=127.0.0.1 PGPORT=5433 /root/miniconda3/envs/v2db/bin/createdb -h 127.0.0.1 -p 5433 -U singhai singhai
+# Ubuntu 22.04,装一次即可
+echo "deb http://apt.postgresql.org/pub/repos/apt jammy-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor -o /etc/apt/trusted.gpg.d/pgdg.gpg
+apt-get update && apt-get install -y postgresql-16
+pg_createcluster 16 main   # 若装完没有现成 cluster
+su - postgres -c "psql -c \"ALTER USER singhai PASSWORD 'singhai'\" -c 'ALTER USER singhai WITH SUPERUSER'" 2>/dev/null || \
+  su - postgres -c "psql -c \"CREATE USER singhai WITH SUPERUSER PASSWORD 'singhai'\""
+su - postgres -c "createdb -O singhai singhai" 2>/dev/null || true
 ```
 
 ## 导入开发数据(幂等,可重跑)
 
 ```bash
-export PATH=/root/miniconda3/envs/v2db/bin:$PATH
-export PGUSER=singhai PGHOST=127.0.0.1 PGPORT=5433 PGDATABASE=singhai
+export PATH=/usr/lib/postgresql/16/bin:$PATH
+export PGPASSWORD=singhai PGUSER=singhai PGHOST=127.0.0.1 PGPORT=5432 PGDATABASE=singhai
 python3 db/migrate/import_sqlite.py /path/to/cargo.db   # 用生产副本
 ```
+
+脚本行为:DROP/CREATE schema(照抄不改)→ 暂禁全库触发器搬运(源库本有悬空
+FK,SQLite 从不开约束)→ 搬完恢复触发器 → 逐表行数核对,全 ✓ 才算过。
+SQLite REAL 列里的文本垃圾(OCR 残字/"N/A"/空串)统一置 NULL 并逐表上报。
