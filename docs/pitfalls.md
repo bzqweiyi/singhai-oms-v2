@@ -50,3 +50,9 @@
   同名函数编译不过,天然免疫,但**注意包间循环依赖**。
 - ⚠️ 加横切过滤/改共享口径前先做零差异回归(`tools/regress_snapshot.py` 对拍)。
 - ⚠️ SQLite→PG 行为差异重点:大小写(引号)、隐式类型、锁与并发;对拍在 PG 上进行。
+- ⚠️ 源库数据质量(SQLite 从不开约束,2026-10-14 生产副本实测):bunker_orders/
+  trade_legs/user_activity_log 有悬空 FK;REAL 列里塞文本脏数据(OCR 残字
+  "+1.00 (OCR partial)"、"N/A"、空串,cargo_orders 8/credit_limits 7/
+  fin_purchase_cargo 2/fin_sales_cargo 15/order_deliveries 1 处)。Go 重写时
+  凡 join 主数据表要容忍孤儿行,凡 float 解析要容忍脏文本——旧 Python 代码
+  对此是静默放任的。
