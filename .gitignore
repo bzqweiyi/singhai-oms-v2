@@ -1,0 +1,25 @@
+# Go 构建产物与本地运行
+backend/server
+backend/bin/
+*.exe
+*.test
+*.out
+
+# 前端构建产物
+frontend/dist/
+frontend/node_modules/
+node_modules/
+
+# 环境变量与密钥(密钥只经服务器环境注入,永不出现在仓库)
+.env
+.env.*
+!.env.example
+
+# 编辑器与系统
+.idea/
+.vscode/
+.DS_Store
+
+# 临时
+*.log
+/tmp/

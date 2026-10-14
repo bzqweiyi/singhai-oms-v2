@@ -1,0 +1,6622 @@
+[
+ {
+  "domain": "charges",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/charge-items",
+  "func": "api_charge_items_list",
+  "line": 51,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charge-items/delete",
+  "func": "api_charge_items_delete",
+  "line": 39,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charge-items/save",
+  "func": "api_charge_items_save",
+  "line": 26,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/apply-invoice",
+  "func": "api_charges_apply_invoice",
+  "line": 91,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/charges/attachment/{att_id}",
+  "func": "api_charge_attachment_download",
+  "line": 324,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/charges/attachments",
+  "func": "api_charges_attachments",
+  "line": 312,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/confirm",
+  "func": "api_charges_confirm",
+  "line": 57,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/pay-apply",
+  "func": "api_charges_pay_apply",
+  "line": 289,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/payment",
+  "func": "api_charges_payment",
+  "line": 178,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/payment/revoke",
+  "func": "api_charges_payment_revoke",
+  "line": 231,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/receipt",
+  "func": "api_charges_receipt",
+  "line": 119,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/receipt/revoke",
+  "func": "api_charges_receipt_revoke",
+  "line": 169,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/unconfirm",
+  "func": "api_charges_unconfirm",
+  "line": 76,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/vendor-invoice",
+  "func": "api_charges_vendor_invoice",
+  "line": 241,
+  "priority": "P0"
+ },
+ {
+  "domain": "charges",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/charges/vendor-invoice/revoke",
+  "func": "api_charges_vendor_invoice_revoke",
+  "line": 280,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/execution/batch/{delivery_id}",
+  "func": "api_execution_batch_get",
+  "line": 346,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/execution/batch/{delivery_id}/void",
+  "func": "api_execution_batch_void",
+  "line": 371,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/execution/batches",
+  "func": "api_execution_batches",
+  "line": 332,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/execution/orders",
+  "func": "api_execution_orders",
+  "line": 221,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/execution/pending",
+  "func": "api_execution_pending",
+  "line": 318,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/execution/queue",
+  "func": "api_execution_queue",
+  "line": 99,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/execution/{biz}/{order_id}",
+  "func": "api_execution_detail",
+  "line": 412,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/execution/{biz}/{order_id}/charges",
+  "func": "api_execution_charges_get",
+  "line": 519,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/execution/{biz}/{order_id}/settle",
+  "func": "api_execution_settle",
+  "line": 535,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/execution",
+  "func": "execution_page",
+  "line": 63,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/execution/bunker",
+  "func": "execution_bunker_page",
+  "line": 75,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/execution/cargo",
+  "func": "execution_cargo_page",
+  "line": 82,
+  "priority": "P0"
+ },
+ {
+  "domain": "execution",
+  "method": [
+   "GET"
+  ],
+  "path": "/execution/export",
+  "func": "execution_export",
+  "line": 281,
+  "priority": "P0"
+ },
+ {
+  "domain": "exports",
+  "method": [
+   "GET"
+  ],
+  "path": "/export",
+  "func": "export_page",
+  "line": 25,
+  "priority": "P0"
+ },
+ {
+  "domain": "exports",
+  "method": [
+   "GET"
+  ],
+  "path": "/export/bunker",
+  "func": "export_bunker",
+  "line": 402,
+  "priority": "P0"
+ },
+ {
+  "domain": "exports",
+  "method": [
+   "GET"
+  ],
+  "path": "/export/cargo",
+  "func": "export_cargo",
+  "line": 359,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/aging",
+  "func": "api_finance_aging",
+  "line": 2646,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/ap-invoice",
+  "func": "api_ap_invoice_create",
+  "line": 1922,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/ap-invoice/available",
+  "func": "api_ap_invoices_available",
+  "line": 1838,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/ap-invoice/check-dup",
+  "func": "api_ap_invoice_check_dup",
+  "line": 1886,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/ap-invoice/parse",
+  "func": "api_ap_invoice_parse",
+  "line": 1862,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/ap-invoice/{inv_id}",
+  "func": "api_ap_invoice_get",
+  "line": 1852,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/ap-invoice/{inv_id}/delete",
+  "func": "api_ap_invoice_delete",
+  "line": 1982,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/ap-invoices",
+  "func": "api_ap_invoices",
+  "line": 1808,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/ar-customers",
+  "func": "api_ar_customers",
+  "line": 2567,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/ar-items",
+  "func": "api_ar_items",
+  "line": 2537,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/ar-overview",
+  "func": "api_ar_overview",
+  "line": 2580,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/cash-receipt",
+  "func": "api_cash_receipt_save",
+  "line": 911,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/cash-receipt/parse",
+  "func": "api_cash_receipt_parse",
+  "line": 865,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/cash-receipt/{rid}",
+  "func": "api_cash_receipt_detail",
+  "line": 853,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/cash-receipt/{rid}/delete",
+  "func": "api_cash_receipt_delete",
+  "line": 969,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/cash-receipt/{rid}/void",
+  "func": "api_cash_receipt_void",
+  "line": 979,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/cash-receipts",
+  "func": "api_cash_receipts",
+  "line": 840,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/cash-receipts/match-payer",
+  "func": "api_cash_receipt_match_payer",
+  "line": 949,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/charge-invoice/{inv_id}",
+  "func": "api_charge_invoice_detail",
+  "line": 2417,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/charge-ledger",
+  "func": "api_charge_ledger",
+  "line": 2352,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/charge-ledger/confirm",
+  "func": "api_charge_ledger_confirm",
+  "line": 2315,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/charges-diff",
+  "func": "api_finance_charges_diff",
+  "line": 3108,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/credit-usage",
+  "func": "api_finance_credit_usage",
+  "line": 3301,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/customer-receipt",
+  "func": "api_finance_customer_receipt",
+  "line": 3351,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/exchange-rate",
+  "func": "api_finance_exchange_rate",
+  "line": 2691,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/exchange-rate/delete",
+  "func": "api_finance_exchange_rate_delete",
+  "line": 2713,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/exchange-rate/fetch-mas",
+  "func": "api_finance_fetch_mas",
+  "line": 2727,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice",
+  "func": "api_finance_invoice",
+  "line": 2965,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice-info",
+  "func": "api_finance_invoice_info",
+  "line": 228,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests",
+  "func": "api_ir_create",
+  "line": 1045,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/attachment",
+  "func": "api_ir_attach_draft",
+  "line": 1409,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/attachment/{att_id}/delete",
+  "func": "api_ir_attach_draft_del",
+  "line": 1432,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/preview",
+  "func": "api_ir_preview_new",
+  "line": 1308,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/submit",
+  "func": "api_ir_submit_new",
+  "line": 1329,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}",
+  "func": "api_ir_detail",
+  "line": 1179,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/attachment",
+  "func": "api_ir_attach",
+  "line": 1442,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/attachment/{att_id}/delete",
+  "func": "api_ir_attach_del",
+  "line": 1470,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/cancel",
+  "func": "api_ir_cancel",
+  "line": 1512,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/detail",
+  "func": "api_ir_form_detail",
+  "line": 1346,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/issue",
+  "func": "api_ir_issue",
+  "line": 1574,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/items",
+  "func": "api_ir_items",
+  "line": 1399,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/pdf",
+  "func": "api_ir_pdf",
+  "line": 1753,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/preview",
+  "func": "api_ir_preview",
+  "line": 1675,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/push-retry",
+  "func": "api_ir_push_retry",
+  "line": 1521,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/receipts",
+  "func": "api_ir_receipts",
+  "line": 1745,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/related-invoices",
+  "func": "api_ir_related_invoices",
+  "line": 1362,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/return",
+  "func": "api_ir_return",
+  "line": 1489,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/reverse",
+  "func": "api_ir_reverse",
+  "line": 1498,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/save",
+  "func": "api_ir_save",
+  "line": 1389,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/settle",
+  "func": "api_ir_settle",
+  "line": 1734,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/settle-prepare",
+  "func": "api_ir_settle_prepare",
+  "line": 1722,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice-requests/{rid}/submit",
+  "func": "api_ir_submit",
+  "line": 1480,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoice/merge",
+  "func": "api_finance_invoice_merge",
+  "line": 2928,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoice/preview",
+  "func": "api_finance_invoice_preview",
+  "line": 2955,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/invoiceable",
+  "func": "api_ir_invoiceable",
+  "line": 1377,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/invoicing/{fin_id}/restore",
+  "func": "api_invoicing_restore",
+  "line": 3070,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/mark-invoice",
+  "func": "api_finance_mark_invoice",
+  "line": 152,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/order-attachment",
+  "func": "api_finance_order_attachment",
+  "line": 3261,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/pay-request/prepay",
+  "func": "api_prepay_create",
+  "line": 2038,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/pay-request/{req_id}",
+  "func": "api_pay_request_detail",
+  "line": 2058,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/pay-request/{req_id}/attachments",
+  "func": "api_pay_request_attach",
+  "line": 2144,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/pay-request/{req_id}/pay",
+  "func": "api_pay_request_pay",
+  "line": 2068,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/pay-request/{req_id}/pay/revoke",
+  "func": "api_pay_request_pay_revoke",
+  "line": 2136,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/pay-request/{req_id}/reject-pay",
+  "func": "api_pay_request_reject_pay",
+  "line": 2113,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/pay-request/{req_id}/withdraw",
+  "func": "api_pay_request_withdraw",
+  "line": 2123,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/pay-requests",
+  "func": "api_pay_requests",
+  "line": 613,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/payee-snapshot",
+  "func": "api_payee_snapshot",
+  "line": 2012,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/price-diff",
+  "func": "api_finance_price_diff",
+  "line": 3079,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/receipt",
+  "func": "api_finance_receipt",
+  "line": 3329,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/receipt/void",
+  "func": "api_finance_receipt_void",
+  "line": 3373,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/receipts",
+  "func": "api_finance_receipts",
+  "line": 3321,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/refund-candidates",
+  "func": "api_refund_candidates",
+  "line": 2023,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/settlements",
+  "func": "api_settlement_create",
+  "line": 753,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/settlements/prepare",
+  "func": "api_settlement_prepare",
+  "line": 721,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/settlements/receipt",
+  "func": "api_settlement_new_receipt",
+  "line": 741,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/settlements/receipts",
+  "func": "api_settlement_receipts",
+  "line": 731,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/settlements/{sid}",
+  "func": "api_settlement_detail",
+  "line": 805,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/settlements/{sid}/void",
+  "func": "api_settlement_void",
+  "line": 815,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/finance/transfer",
+  "func": "api_finance_transfer",
+  "line": 2756,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/finance/transfer/preview",
+  "func": "api_finance_transfer_preview",
+  "line": 2789,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance",
+  "func": "finance_page",
+  "line": 252,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ap-board",
+  "func": "ap_board_page",
+  "line": 471,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ap-charges",
+  "func": "ap_charges_page",
+  "line": 2201,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ap-invoices",
+  "func": "finance_ap_invoices_page",
+  "line": 1791,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ap-invoices/export",
+  "func": "ap_invoices_export",
+  "line": 2004,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ar-ap-board",
+  "func": "ar_ap_board_page",
+  "line": 395,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ar-ap-charges",
+  "func": "charge_ledger_page",
+  "line": 2166,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ar-board",
+  "func": "ar_board_page",
+  "line": 456,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ar-charges",
+  "func": "ar_charges_page",
+  "line": 2196,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ar-customers/export",
+  "func": "ar_customers_export",
+  "line": 2621,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/ar-items/export",
+  "func": "ar_items_export",
+  "line": 2595,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/cash-receipts",
+  "func": "finance_cash_receipts_page",
+  "line": 824,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/cash-receipts/export",
+  "func": "cash_receipts_export",
+  "line": 989,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/charge-ledger/export",
+  "func": "charge_ledger_export",
+  "line": 2486,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/exchange-rates",
+  "func": "exchange_rates_page",
+  "line": 2658,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/exchange-rates/export",
+  "func": "exchange_rates_export",
+  "line": 109,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/infotech",
+  "func": "infotech_page",
+  "line": 207,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/infotech/pushes/export",
+  "func": "infotech_pushes_export",
+  "line": 92,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/invoice-mgmt",
+  "func": "finance_invoice_mgmt_page",
+  "line": 1129,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/invoice-requests",
+  "func": "finance_invoice_requests_page",
+  "line": 1121,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/invoice-requests/new",
+  "func": "finance_invoice_request_new_page",
+  "line": 1204,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/invoice-requests/{rid}",
+  "func": "finance_invoice_request_form_page",
+  "line": 1243,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/invoicing",
+  "func": "finance_page",
+  "line": 252,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/invoicing/export",
+  "func": "finance_invoicing_export",
+  "line": 3237,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/overdue",
+  "func": "ar_overdue_page",
+  "line": 466,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/pay-requests",
+  "func": "finance_pay_requests_page",
+  "line": 597,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/pay-requests/export",
+  "func": "pay_requests_export",
+  "line": 101,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/payments",
+  "func": "finance_payments_page",
+  "line": 605,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/receipts",
+  "func": "finance_page",
+  "line": 252,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/receipts/export",
+  "func": "finance_receipts_export",
+  "line": 3192,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/receivables",
+  "func": "ar_receivables_page",
+  "line": 461,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/settlements",
+  "func": "finance_settlements_page",
+  "line": 762,
+  "priority": "P0"
+ },
+ {
+  "domain": "finance",
+  "method": [
+   "GET"
+  ],
+  "path": "/finance/settlements/new",
+  "func": "finance_settlement_new_page",
+  "line": 692,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/",
+  "func": "root",
+  "line": 862,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/data-version",
+  "func": "api_data_version",
+  "line": 235,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/get-token",
+  "func": "api_get_token",
+  "line": 749,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/app",
+  "func": "app_shell",
+  "line": 892,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/assets/i18n.js",
+  "func": "assets_i18n_js",
+  "line": 304,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/dashboard",
+  "func": "dashboard",
+  "line": 976,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/favicon.ico",
+  "func": "favicon",
+  "line": 285,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/health",
+  "func": "health",
+  "line": 2640,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/login",
+  "func": "login_page",
+  "line": 921,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/logout",
+  "func": "logout",
+  "line": 946,
+  "priority": "P0"
+ },
+ {
+  "domain": "main",
+  "method": [
+   "GET"
+  ],
+  "path": "/set-lang/{lang}",
+  "func": "set_lang",
+  "line": 955,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/ais-refresh-status",
+  "func": "api_ais_refresh_status",
+  "line": 917,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "DELETE"
+  ],
+  "path": "/api/attachments/{attach_id}",
+  "func": "api_attachment_delete",
+  "line": 1221,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/attachments/{attach_id}/download",
+  "func": "api_attachment_download",
+  "line": 2032,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/attachments/{attach_id}/preview",
+  "func": "api_attachment_preview",
+  "line": 2038,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/attachments/{attach_id}/preview/{fname}",
+  "func": "api_attachment_preview",
+  "line": 2038,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker-order/save",
+  "func": "api_bunker_order_save",
+  "line": 1282,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker-order/{bunker_id}",
+  "func": "api_bunker_order_get",
+  "line": 1246,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker-order/{bunker_id}/activity",
+  "func": "api_bunker_order_activity",
+  "line": 925,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker-order/{bunker_id}/attachments",
+  "func": "api_bunker_order_attachments_upload",
+  "line": 1196,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker-order/{bunker_id}/changes",
+  "func": "api_bunker_order_changes",
+  "line": 933,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker-order/{bunker_id}/confirm",
+  "func": "api_bunker_order_confirm",
+  "line": 2617,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker-order/{bunker_id}/deliver",
+  "func": "api_bunker_order_deliver",
+  "line": 1141,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker-order/{bunker_id}/detail",
+  "func": "api_bunker_order_detail",
+  "line": 942,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker-order/{bunker_id}/manual-invoice-no",
+  "func": "api_bunker_manual_invoice_no",
+  "line": 623,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker-orders",
+  "func": "api_bunker_orders_list",
+  "line": 814,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker/filter-options",
+  "func": "api_bunker_filter_options",
+  "line": 805,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker/mops-basis",
+  "func": "api_bunker_mops_basis",
+  "line": 791,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cargo-board/detail",
+  "func": "api_cargo_board_detail",
+  "line": 395,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cargo-board/list",
+  "func": "api_cargo_board_list",
+  "line": 373,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cargo-order/save",
+  "func": "api_cargo_order_save",
+  "line": 410,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cargo-order/{cargo_id}/activity",
+  "func": "api_cargo_order_activity",
+  "line": 1779,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cargo-order/{cargo_id}/attachments",
+  "func": "api_cargo_order_attachment_upload",
+  "line": 1657,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cargo-order/{cargo_id}/confirm",
+  "func": "api_cargo_order_confirm",
+  "line": 2634,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cargo-order/{cargo_id}/deliver",
+  "func": "api_cargo_order_deliver",
+  "line": 1991,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cargo-order/{cargo_id}/detail",
+  "func": "api_cargo_order_detail",
+  "line": 1786,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cargo-orders",
+  "func": "api_cargo_orders_list",
+  "line": 1696,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/grid-prefs/{grid_key}",
+  "func": "api_grid_prefs_get",
+  "line": 756,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/next-bunker-id",
+  "func": "api_next_bunker_id",
+  "line": 46,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/next-cargo-id",
+  "func": "api_next_cargo_id",
+  "line": 39,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/order-attachments/draft",
+  "func": "api_order_attachment_draft",
+  "line": 1617,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/order/apply-invoice",
+  "func": "api_order_apply_invoice",
+  "line": 640,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/orders/next-no",
+  "func": "api_order_next_no",
+  "line": 2582,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/orders/recycle-bin",
+  "func": "api_recycle_bin",
+  "line": 2414,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders",
+  "func": "orders_page",
+  "line": 335,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/bunker",
+  "func": "orders_bunker",
+  "line": 552,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/batch-delete",
+  "func": "bunker_batch_delete",
+  "line": 2461,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/clear-all",
+  "func": "bunker_clear_all",
+  "line": 2576,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/bunker/edit",
+  "func": "orders_bunker_edit_form",
+  "line": 71,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/bunker/new",
+  "func": "orders_bunker_new",
+  "line": 559,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/bunker/{bunker_id}",
+  "func": "orders_bunker_view_page",
+  "line": 611,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/{bunker_id}/cancel",
+  "func": "bunker_cancel",
+  "line": 2552,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/{bunker_id}/complete",
+  "func": "bunker_complete",
+  "line": 2531,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/{bunker_id}/confirm",
+  "func": "bunker_confirm",
+  "line": 2088,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/{bunker_id}/delete",
+  "func": "bunker_delete",
+  "line": 2424,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/bunker/{bunker_id}/deliver",
+  "func": "orders_bunker_deliver_page",
+  "line": 599,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/bunker/{bunker_id}/edit",
+  "func": "orders_bunker_edit_page",
+  "line": 567,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/cargo",
+  "func": "orders_cargo",
+  "line": 352,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/cargo/batch-delete",
+  "func": "cargo_batch_delete",
+  "line": 2483,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/cargo/new",
+  "func": "orders_cargo_new",
+  "line": 364,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/cargo/{cargo_id}",
+  "func": "orders_cargo_view_page",
+  "line": 529,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/cargo/{cargo_id}/cancel",
+  "func": "cargo_cancel",
+  "line": 2297,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/cargo/{cargo_id}/complete",
+  "func": "cargo_complete",
+  "line": 2279,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/cargo/{cargo_id}/confirm",
+  "func": "cargo_confirm",
+  "line": 2079,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/cargo/{cargo_id}/delete",
+  "func": "cargo_delete",
+  "line": 2267,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/cargo/{cargo_id}/deliver",
+  "func": "orders_cargo_deliver_page",
+  "line": 577,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/cargo/{cargo_id}/edit",
+  "func": "orders_cargo_edit_page",
+  "line": 542,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/recycle-bin",
+  "func": "recycle_bin_page",
+  "line": 2401,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/recycle-bin/export",
+  "func": "recycle_bin_export",
+  "line": 136,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/{biz}/{order_id}/purge",
+  "func": "order_purge",
+  "line": 2382,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/{biz}/{order_id}/restore",
+  "func": "order_restore",
+  "line": 2358,
+  "priority": "P0"
+ },
+ {
+  "domain": "orders",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/{biz}/{order_id}/soft-delete",
+  "func": "order_soft_delete",
+  "line": 2335,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker-edit-token",
+  "func": "api_bunker_edit_token",
+  "line": 514,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/recap/cp-credit",
+  "func": "api_recap_cp_credit",
+  "line": 344,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "GET"
+  ],
+  "path": "/recap/bunker",
+  "func": "recap_bunker_form",
+  "line": 312,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "POST"
+  ],
+  "path": "/recap/bunker/confirm",
+  "func": "recap_bunker_confirm",
+  "line": 539,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "GET"
+  ],
+  "path": "/recap/bunker/edit",
+  "func": "recap_bunker_edit_form",
+  "line": 437,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "GET"
+  ],
+  "path": "/recap/cargo",
+  "func": "recap_cargo_form",
+  "line": 150,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "POST"
+  ],
+  "path": "/recap/cargo/confirm",
+  "func": "recap_cargo_confirm",
+  "line": 284,
+  "priority": "P0"
+ },
+ {
+  "domain": "recap",
+  "method": [
+   "GET"
+  ],
+  "path": "/recap/cargo/edit",
+  "func": "recap_cargo_edit_form",
+  "line": 240,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/_retired/credit/applications",
+  "func": "credit_applications_page_retired",
+  "line": 786,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cost-line/{line_id}",
+  "func": "api_cost_line_edit",
+  "line": 169,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cost-line/{line_id}/push",
+  "func": "api_cost_line_push",
+  "line": 94,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cost-line/{line_id}/receive",
+  "func": "api_cost_line_receive",
+  "line": 103,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cost-line/{line_id}/restore",
+  "func": "api_cost_line_restore",
+  "line": 150,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cost-line/{line_id}/sign",
+  "func": "api_cost_line_sign",
+  "line": 159,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cost-line/{line_id}/void",
+  "func": "api_cost_line_void",
+  "line": 140,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/fin-row/{tab}/{fin_id}/restore",
+  "func": "api_fin_row_restore",
+  "line": 223,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/fin-row/{tab}/{fin_id}/void",
+  "func": "api_fin_row_void",
+  "line": 202,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/order/{biz}/{order_id}/charge",
+  "func": "api_order_charge_save",
+  "line": 508,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/order/{biz}/{order_id}/charge/adjust",
+  "func": "api_order_charge_adjust",
+  "line": 769,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/order/{biz}/{order_id}/charge/delete",
+  "func": "api_order_charge_delete",
+  "line": 528,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/order/{biz}/{order_id}/charges",
+  "func": "api_order_charges",
+  "line": 428,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/orders/{biz}/{order_id}/cost-lines",
+  "func": "api_cost_lines_add",
+  "line": 76,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/orders/{biz}/{order_id}/execution",
+  "func": "api_order_execution",
+  "line": 235,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/orders/{biz}/{order_id}/settlement",
+  "func": "api_order_settlement",
+  "line": 26,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/pricing/event-window",
+  "func": "api_pricing_event_window",
+  "line": 64,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement-line/{line_id}",
+  "func": "api_settlement_line_edit",
+  "line": 52,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement-line/{line_id}/sign",
+  "func": "api_settlement_line_sign",
+  "line": 178,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement-line/{line_id}/void",
+  "func": "api_settlement_line_void",
+  "line": 190,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/apply-invoice",
+  "func": "api_settlement_apply_invoice",
+  "line": 751,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/settlement/center",
+  "func": "api_settlement_center",
+  "line": 654,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/charge",
+  "func": "api_settlement_charge_save",
+  "line": 338,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/charge/delete",
+  "func": "api_settlement_charge_delete",
+  "line": 348,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/settlement/charges",
+  "func": "api_settlement_charges",
+  "line": 301,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/invoice",
+  "func": "api_settlement_invoice",
+  "line": 545,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/invoice/void",
+  "func": "api_settlement_invoice_void",
+  "line": 564,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/settlement/invoices",
+  "func": "api_settlement_invoices",
+  "line": 557,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/settlement/order-options",
+  "func": "api_settlement_order_options",
+  "line": 315,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/pay-apply-goods",
+  "func": "api_settlement_pay_apply_goods",
+  "line": 733,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/settlement/pending",
+  "func": "api_settlement_pending",
+  "line": 669,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/receive-goods-invoice",
+  "func": "api_settlement_receive_goods_invoice",
+  "line": 676,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/settlement/sync",
+  "func": "api_settlement_sync",
+  "line": 581,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/settlement/unsynced",
+  "func": "api_settlement_unsynced",
+  "line": 573,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/settlement/center",
+  "func": "settlement_center_page",
+  "line": 626,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/settlement/charges",
+  "func": "settlement_charges_page",
+  "line": 285,
+  "priority": "P0"
+ },
+ {
+  "domain": "settlement",
+  "method": [
+   "GET"
+  ],
+  "path": "/settlement/charges/export",
+  "func": "settlement_charges_export",
+  "line": 604,
+  "priority": "P0"
+ },
+ {
+  "domain": "so",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/invoice/parse",
+  "func": "api_invoice_parse",
+  "line": 201,
+  "priority": "P0"
+ },
+ {
+  "domain": "so",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/so/buyers",
+  "func": "api_so_buyer_upsert",
+  "line": 173,
+  "priority": "P0"
+ },
+ {
+  "domain": "so",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/so/buyers/delete",
+  "func": "api_so_buyer_delete",
+  "line": 187,
+  "priority": "P0"
+ },
+ {
+  "domain": "so",
+  "method": [
+   "GET"
+  ],
+  "path": "/orders/bunker/{bunker_id}/so",
+  "func": "bunker_so_form_page",
+  "line": 102,
+  "priority": "P0"
+ },
+ {
+  "domain": "so",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/{bunker_id}/so/pdf",
+  "func": "bunker_so_pdf",
+  "line": 133,
+  "priority": "P0"
+ },
+ {
+  "domain": "so",
+  "method": [
+   "POST"
+  ],
+  "path": "/orders/bunker/{bunker_id}/so/preview",
+  "func": "bunker_so_preview",
+  "line": 120,
+  "priority": "P0"
+ },
+ {
+  "domain": "so",
+  "method": [
+   "GET"
+  ],
+  "path": "/so/buyers",
+  "func": "so_buyers_page",
+  "line": 159,
+  "priority": "P0"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/activity",
+  "func": "admin_activity",
+  "line": 691,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/approvers",
+  "func": "admin_approvers_page",
+  "line": 699,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/bunker/orders",
+  "func": "admin_bunker_orders",
+  "line": 119,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/infotech",
+  "func": "infotech_page_legacy",
+  "line": 727,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/charge-items",
+  "func": "charge_items_page",
+  "line": 476,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/charge-items/export",
+  "func": "charge_items_export",
+  "line": 62,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/finance",
+  "func": "admin_module_finance_moved",
+  "line": 447,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/inventory",
+  "func": "admin_module_inventory_moved",
+  "line": 442,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/lt-agreements",
+  "func": "lta_legacy_redirect",
+  "line": 426,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/number-rules",
+  "func": "admin_number_rules",
+  "line": 387,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/org-structure",
+  "func": "admin_org_page",
+  "line": 269,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/org-structure/export",
+  "func": "org_structure_export",
+  "line": 108,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/bank-account/delete",
+  "func": "admin_org_bank_delete",
+  "line": 300,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/bank-account/save",
+  "func": "admin_org_bank_save",
+  "line": 289,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/company/create",
+  "func": "admin_org_company_create",
+  "line": 313,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/company/delete",
+  "func": "admin_org_company_delete",
+  "line": 348,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/company/update",
+  "func": "admin_org_company_update",
+  "line": 328,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/dept/create",
+  "func": "admin_org_dept_create",
+  "line": 361,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/dept/delete",
+  "func": "admin_org_dept_delete",
+  "line": 398,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/dept/update",
+  "func": "admin_org_dept_update",
+  "line": 372,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/org/user-dept",
+  "func": "admin_org_user_dept",
+  "line": 409,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/ports",
+  "func": "admin_module_ports_moved",
+  "line": 452,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/products",
+  "func": "admin_module_products_moved",
+  "line": 457,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/roles",
+  "func": "admin_roles_page",
+  "line": 173,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/roles/create",
+  "func": "admin_roles_create",
+  "line": 180,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/roles/save",
+  "func": "admin_roles_save",
+  "line": 193,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/roles/set-data-scope",
+  "func": "admin_roles_set_data_scope",
+  "line": 240,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/roles/toggle-perm",
+  "func": "admin_roles_toggle_perm",
+  "line": 219,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/module/roles/{code}/delete",
+  "func": "admin_roles_delete",
+  "line": 256,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/trade-terms",
+  "func": "admin_trade_terms",
+  "line": 464,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/trade-terms/export",
+  "func": "trade_terms_export",
+  "line": 54,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/vessels",
+  "func": "vessels_legacy_redirect",
+  "line": 420,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/module/{slug}",
+  "func": "admin_module_page",
+  "line": 499,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/qa-audit",
+  "func": "qa_audit_page",
+  "line": 563,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/qa-audit/export",
+  "func": "qa_audit_export",
+  "line": 93,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/tg-users",
+  "func": "admin_tg_users",
+  "line": 582,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/users",
+  "func": "admin_users",
+  "line": 544,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/users/create",
+  "func": "admin_users_create_get",
+  "line": 590,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/users/export",
+  "func": "users_export",
+  "line": 85,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/users/{uid}/password",
+  "func": "admin_user_password",
+  "line": 684,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/users/{uid}/toggle",
+  "func": "admin_user_toggle",
+  "line": 675,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/users/{uid}/update",
+  "func": "admin_user_update",
+  "line": 643,
+  "priority": "P1"
+ },
+ {
+  "domain": "admin",
+  "method": [
+   "GET"
+  ],
+  "path": "/dev/list-kit",
+  "func": "dev_list_kit",
+  "line": 741,
+  "priority": "P1"
+ },
+ {
+  "domain": "amends",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/bunker/amend/fields",
+  "func": "api_bunker_amend_fields",
+  "line": 151,
+  "priority": "P1"
+ },
+ {
+  "domain": "amends",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker/amend/submit",
+  "func": "api_bunker_amend_submit",
+  "line": 135,
+  "priority": "P1"
+ },
+ {
+  "domain": "amends",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cargo/amend/fields",
+  "func": "api_cargo_amend_fields",
+  "line": 124,
+  "priority": "P1"
+ },
+ {
+  "domain": "amends",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cargo/amend/submit",
+  "func": "api_cargo_amend_submit",
+  "line": 43,
+  "priority": "P1"
+ },
+ {
+  "domain": "amends",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cargo/contract/submit",
+  "func": "api_cargo_contract_submit",
+  "line": 28,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/application/{app_id}",
+  "func": "api_credit_appl_detail",
+  "line": 74,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/credit/application/{app_id}/approve",
+  "func": "api_credit_appl_approve",
+  "line": 87,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/credit/application/{app_id}/reject",
+  "func": "api_credit_appl_reject",
+  "line": 103,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/applications",
+  "func": "api_credit_applications",
+  "line": 62,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/credit/apply",
+  "func": "api_credit_apply_submit",
+  "line": 162,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/apply/snapshot",
+  "func": "api_credit_apply_snapshot",
+  "line": 152,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/change-log",
+  "func": "api_credit_change_log",
+  "line": 347,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/credit/import",
+  "func": "api_credit_import_commit",
+  "line": 511,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/import-history",
+  "func": "api_credit_import_history",
+  "line": 529,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/import-history/{batch_id}",
+  "func": "api_credit_import_history_detail",
+  "line": 537,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/credit/import-preview",
+  "func": "api_credit_import_preview",
+  "line": 494,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/monitor",
+  "func": "api_credit_monitor",
+  "line": 432,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/rows",
+  "func": "api_credit_rows",
+  "line": 355,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/credit/update",
+  "func": "api_credit_update",
+  "line": 469,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/credit/usage-detail",
+  "func": "api_credit_usage_detail",
+  "line": 334,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/credit",
+  "func": "credit_page",
+  "line": 254,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/credit/applications",
+  "func": "credit_applications_page",
+  "line": 55,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/credit/apply",
+  "func": "credit_apply_page",
+  "line": 138,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/credit/backfill",
+  "func": "credit_backfill",
+  "line": 292,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/credit/export",
+  "func": "credit_export",
+  "line": 370,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/credit/monitor/export",
+  "func": "credit_monitor_export",
+  "line": 452,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "GET"
+  ],
+  "path": "/credit/unlinked",
+  "func": "credit_unlinked",
+  "line": 284,
+  "priority": "P1"
+ },
+ {
+  "domain": "credit",
+  "method": [
+   "POST"
+  ],
+  "path": "/credit/{cid}/link",
+  "func": "credit_link",
+  "line": 307,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "GET"
+  ],
+  "path": "/_retired/counterparties/changes",
+  "func": "cp_changes_page_retired",
+  "line": 372,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/approvers",
+  "func": "api_set_approvers",
+  "line": 392,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/flow/{instance_id}",
+  "func": "api_flow_detail",
+  "line": 333,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/flow/{instance_id}/decide",
+  "func": "api_flow_decide",
+  "line": 341,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/flow/{instance_id}/resubmit",
+  "func": "api_flow_resubmit",
+  "line": 365,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/flow/{instance_id}/withdraw",
+  "func": "api_flow_withdraw",
+  "line": 358,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "GET"
+  ],
+  "path": "/approvals/done",
+  "func": "approvals_page",
+  "line": 75,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "GET"
+  ],
+  "path": "/approvals/export",
+  "func": "approvals_export",
+  "line": 32,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "GET"
+  ],
+  "path": "/approvals/mine",
+  "func": "approvals_page",
+  "line": 75,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "GET"
+  ],
+  "path": "/approvals/todo",
+  "func": "approvals_page",
+  "line": 75,
+  "priority": "P1"
+ },
+ {
+  "domain": "flows",
+  "method": [
+   "GET"
+  ],
+  "path": "/flows",
+  "func": "flows_center",
+  "line": 90,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/allocate",
+  "func": "api_inv_allocate",
+  "line": 775,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/arrival",
+  "func": "api_inv_arrival",
+  "line": 626,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/balance",
+  "func": "api_inv_balance",
+  "line": 400,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/counts",
+  "func": "api_inv_counts",
+  "line": 808,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/counts/confirm",
+  "func": "api_inv_count_confirm",
+  "line": 873,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/counts/save",
+  "func": "api_inv_count_save",
+  "line": 820,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/deliveries",
+  "func": "api_inv_order_deliveries",
+  "line": 354,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/doc/{kind}",
+  "func": "api_inv_doc_list",
+  "line": 457,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/flows",
+  "func": "api_inv_flows",
+  "line": 611,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/link-orders",
+  "func": "api_inv_link_orders",
+  "line": 337,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/locations",
+  "func": "api_inv_locations",
+  "line": 900,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/locations/delete",
+  "func": "api_inv_location_delete",
+  "line": 924,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/locations/save",
+  "func": "api_inv_location_save",
+  "line": 908,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/lot/{lot_id}",
+  "func": "api_inv_lot_detail",
+  "line": 764,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/lots/available",
+  "func": "api_inv_lots_available",
+  "line": 643,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/lots/fifo-suggest",
+  "func": "api_inv_fifo_suggest",
+  "line": 656,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/lots/{lot_id}/trace",
+  "func": "api_inv_lot_trace",
+  "line": 857,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/match",
+  "func": "api_inv_match",
+  "line": 741,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/moves",
+  "func": "api_inv_moves",
+  "line": 600,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/moves/create",
+  "func": "api_inv_move_create",
+  "line": 666,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/moves/delete",
+  "func": "api_inv_move_delete",
+  "line": 683,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/moves/post",
+  "func": "api_inv_moves_post",
+  "line": 833,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/moves/reverse",
+  "func": "api_inv_move_reverse",
+  "line": 711,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/moves/update",
+  "func": "api_inv_move_update",
+  "line": 698,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/moves/{move_id}/trace",
+  "func": "api_inv_move_trace",
+  "line": 847,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/out/{move_id}",
+  "func": "api_inv_out_detail",
+  "line": 751,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/overview",
+  "func": "api_inv_overview",
+  "line": 286,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/period",
+  "func": "api_inv_period",
+  "line": 319,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/report",
+  "func": "api_inv_report",
+  "line": 272,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/status",
+  "func": "api_inv_status",
+  "line": 308,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/stocktake",
+  "func": "api_inv_stocktake_list",
+  "line": 555,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/stocktake/delete",
+  "func": "api_inv_stocktake_delete",
+  "line": 581,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/stocktake/save",
+  "func": "api_inv_stocktake_save",
+  "line": 567,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/stocktake/sheet",
+  "func": "api_inv_stocktake_sheet",
+  "line": 547,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/transit",
+  "func": "api_inv_transit",
+  "line": 254,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/transit-summary",
+  "func": "api_inv_transit_summary",
+  "line": 264,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/trend",
+  "func": "api_inv_trend",
+  "line": 297,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/unallocate",
+  "func": "api_inv_unallocate",
+  "line": 789,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/inventory/zones",
+  "func": "api_inv_zones",
+  "line": 368,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/zones/delete",
+  "func": "api_inv_zone_delete",
+  "line": 390,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/inventory/zones/save",
+  "func": "api_inv_zone_save",
+  "line": 378,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory",
+  "func": "inventory_board_page",
+  "line": 235,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/counts",
+  "func": "inventory_counts_page",
+  "line": 798,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/doc/{kind}/export",
+  "func": "inventory_doc_export",
+  "line": 484,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/export",
+  "func": "inventory_board_export",
+  "line": 66,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/flows/export",
+  "func": "inventory_flows_export",
+  "line": 119,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/inbound",
+  "func": "inventory_inbound_page",
+  "line": 428,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/locations",
+  "func": "inventory_locations_page",
+  "line": 886,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/locations/export",
+  "func": "inventory_locations_export",
+  "line": 35,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/lots/export",
+  "func": "inventory_lots_export",
+  "line": 132,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/match",
+  "func": "inventory_match_page",
+  "line": 732,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/match/export",
+  "func": "inventory_match_export",
+  "line": 158,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/moves",
+  "func": "inventory_moves_page",
+  "line": 591,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/moves/export",
+  "func": "inventory_moves_export",
+  "line": 144,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/outbound",
+  "func": "inventory_outbound_page",
+  "line": 437,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/stocktake",
+  "func": "inventory_stocktake_page",
+  "line": 537,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/stocktake/export",
+  "func": "inventory_stocktake_export",
+  "line": 189,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/transfer",
+  "func": "inventory_transfer_page",
+  "line": 449,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/transfer/export",
+  "func": "inventory_transfer_export",
+  "line": 181,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/transit",
+  "func": "inventory_transit_page",
+  "line": 245,
+  "priority": "P1"
+ },
+ {
+  "domain": "inventory",
+  "method": [
+   "GET"
+  ],
+  "path": "/inventory/transit/export",
+  "func": "inventory_transit_export",
+  "line": 167,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/lt-agreements",
+  "func": "lta_list_page",
+  "line": 26,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/lt-agreements/export",
+  "func": "lta_export",
+  "line": 107,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/lt-agreements/new",
+  "func": "lta_new_page",
+  "line": 134,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/lt-agreements/{aid}",
+  "func": "lta_detail_legacy",
+  "line": 151,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/lt-agreements",
+  "func": "api_lta_list",
+  "line": 162,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/batch-delete",
+  "func": "api_lta_batch_delete",
+  "line": 176,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/lt-agreements/next-no",
+  "func": "api_lta_next_no",
+  "line": 210,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/lt-agreements/port-template",
+  "func": "api_lta_port_template",
+  "line": 196,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/save",
+  "func": "api_lta_save",
+  "line": 230,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/lt-agreements/{aid}",
+  "func": "api_lta_get",
+  "line": 220,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/{aid}/charge-rates",
+  "func": "api_lta_charge_rates",
+  "line": 286,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/{aid}/delete",
+  "func": "api_lta_delete",
+  "line": 327,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/lt-agreements/{aid}/history",
+  "func": "api_lta_history",
+  "line": 252,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/{aid}/link",
+  "func": "api_lta_link",
+  "line": 296,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/lt-agreements/{aid}/linkable",
+  "func": "api_lta_linkable",
+  "line": 276,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/lt-agreements/{aid}/orders",
+  "func": "api_lta_orders",
+  "line": 262,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/{aid}/status",
+  "func": "api_lta_status",
+  "line": 318,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/{aid}/submit",
+  "func": "api_lta_submit",
+  "line": 335,
+  "priority": "P1"
+ },
+ {
+  "domain": "lta",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/lt-agreements/{aid}/unlink",
+  "func": "api_lta_unlink",
+  "line": 307,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/counterparties",
+  "func": "admin_cp_list",
+  "line": 380,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/counterparties/changes",
+  "func": "cp_changes_page",
+  "line": 700,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/counterparties/create",
+  "func": "admin_cp_create",
+  "line": 545,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/counterparties/export",
+  "func": "cp_export",
+  "line": 514,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/counterparties/{cp_id}/delete",
+  "func": "admin_cp_delete",
+  "line": 729,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/admin/counterparties/{cp_id}/update",
+  "func": "admin_cp_update",
+  "line": 577,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/country-regions",
+  "func": "admin_country_regions_page",
+  "line": 269,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/country-regions/export",
+  "func": "country_regions_export",
+  "line": 152,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/currencies",
+  "func": "currencies_page",
+  "line": 194,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/currencies/export",
+  "func": "currencies_export",
+  "line": 120,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/ports",
+  "func": "admin_ports_page",
+  "line": 292,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/ports/export",
+  "func": "ports_export",
+  "line": 104,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/pricing-bases",
+  "func": "pricing_bases_page",
+  "line": 233,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/pricing-bases/export",
+  "func": "pricing_bases_export",
+  "line": 144,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/pricing-units",
+  "func": "pricing_units_page",
+  "line": 214,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/pricing-units/export",
+  "func": "pricing_units_export",
+  "line": 136,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/products",
+  "func": "admin_products_page",
+  "line": 279,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/products/export",
+  "func": "products_export",
+  "line": 112,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/tax-rates",
+  "func": "tax_rates_page",
+  "line": 250,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/tax-rates/export",
+  "func": "tax_rates_export",
+  "line": 128,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/vessels",
+  "func": "vessels_page",
+  "line": 752,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/admin/vessels/export",
+  "func": "vessels_export",
+  "line": 790,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/counterparties",
+  "func": "api_counterparties",
+  "line": 403,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/counterparties/verify-acra",
+  "func": "api_cp_verify_acra",
+  "line": 420,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/counterparties/verify-sanctions",
+  "func": "api_cp_verify_sanctions",
+  "line": 434,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/counterparties/{cp_id}/save-acra",
+  "func": "api_cp_save_acra",
+  "line": 449,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/counterparties/{cp_id}/save-sanctions",
+  "func": "api_cp_save_sanctions",
+  "line": 468,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/country-regions/list",
+  "func": "api_country_regions_list",
+  "line": 1063,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/country-regions/save",
+  "func": "api_country_regions_save",
+  "line": 1070,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cp-attachments",
+  "func": "api_cp_attachment_upload",
+  "line": 614,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "DELETE"
+  ],
+  "path": "/api/cp-attachments/{att_id}",
+  "func": "api_cp_attachment_delete",
+  "line": 656,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cp-attachments/{att_id}/download",
+  "func": "api_cp_attachment_download",
+  "line": 683,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cp-attachments/{att_id}/preview",
+  "func": "api_cp_attachment_preview",
+  "line": 691,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cp-attachments/{att_id}/preview/{fname}",
+  "func": "api_cp_attachment_preview",
+  "line": 691,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cp-change/{req_id}/decide",
+  "func": "api_cp_change_decide",
+  "line": 707,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/cp-change/{req_id}/resubmit",
+  "func": "api_cp_change_resubmit",
+  "line": 720,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/cp-credit",
+  "func": "api_cp_credit",
+  "line": 160,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/currencies",
+  "func": "api_currencies",
+  "line": 912,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/currencies/save",
+  "func": "api_currency_save",
+  "line": 895,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/currencies/toggle",
+  "func": "api_currency_toggle",
+  "line": 903,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/infotech/tax-codes",
+  "func": "api_infotech_tax_codes",
+  "line": 1011,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/number-rules/save",
+  "func": "api_number_rules_save",
+  "line": 875,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/ports/library-search",
+  "func": "api_port_library_search",
+  "line": 316,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/ports/list",
+  "func": "api_ports_list",
+  "line": 308,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/ports/save",
+  "func": "api_ports_save",
+  "line": 324,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/pricing-bases",
+  "func": "api_pricing_bases",
+  "line": 972,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/pricing-bases/save",
+  "func": "api_pricing_base_save",
+  "line": 955,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/pricing-bases/toggle",
+  "func": "api_pricing_base_toggle",
+  "line": 963,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/pricing-units",
+  "func": "api_pricing_units",
+  "line": 944,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/pricing-units/save",
+  "func": "api_pricing_unit_save",
+  "line": 927,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/pricing-units/toggle",
+  "func": "api_pricing_unit_toggle",
+  "line": 935,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/products/list",
+  "func": "api_products_list",
+  "line": 1084,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/products/save",
+  "func": "api_products_save",
+  "line": 1091,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/qa-audit",
+  "func": "api_qa_audit",
+  "line": 1104,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/resources/{name}",
+  "func": "api_resource_schema",
+  "line": 389,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/tax-rates",
+  "func": "api_tax_rates",
+  "line": 1024,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/tax-rates/delete",
+  "func": "api_tax_rate_delete",
+  "line": 1001,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/tax-rates/save",
+  "func": "api_tax_rate_save",
+  "line": 984,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/tax-rates/toggle",
+  "func": "api_tax_rate_toggle",
+  "line": 992,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/trade-terms",
+  "func": "api_trade_terms",
+  "line": 1035,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/trade-terms/delete",
+  "func": "api_trade_term_delete",
+  "line": 1054,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/trade-terms/save",
+  "func": "api_trade_term_save",
+  "line": 1042,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/vessels",
+  "func": "api_vessels_list",
+  "line": 763,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/vessels/equasis-query",
+  "func": "api_vessels_equasis_query",
+  "line": 827,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/vessels/import",
+  "func": "api_vessels_import",
+  "line": 814,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/vessels/save",
+  "func": "api_vessels_save",
+  "line": 770,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/vessels/scan",
+  "func": "api_vessels_scan",
+  "line": 806,
+  "priority": "P1"
+ },
+ {
+  "domain": "masterdata",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/vessels/{vid}/delete",
+  "func": "api_vessels_delete",
+  "line": 779,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/price/latest",
+  "func": "api_price_latest",
+  "line": 27,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/prices/delete",
+  "func": "api_prices_delete",
+  "line": 86,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/prices/entry-reminder",
+  "func": "api_price_entry_reminder",
+  "line": 257,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/prices/entry-reminder/snooze",
+  "func": "api_price_entry_reminder_snooze",
+  "line": 279,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/prices/export",
+  "func": "api_prices_export",
+  "line": 118,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/prices/import",
+  "func": "api_prices_import",
+  "line": 232,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/prices/import-preview",
+  "func": "api_prices_import_preview",
+  "line": 211,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/prices/phase",
+  "func": "api_prices_phase",
+  "line": 169,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/prices/recalc-premium",
+  "func": "api_prices_recalc_premium",
+  "line": 200,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/prices/rows",
+  "func": "api_prices_rows",
+  "line": 106,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/prices/upsert",
+  "func": "api_prices_upsert",
+  "line": 67,
+  "priority": "P1"
+ },
+ {
+  "domain": "prices",
+  "method": [
+   "GET"
+  ],
+  "path": "/prices",
+  "func": "prices_page",
+  "line": 33,
+  "priority": "P1"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/bunker/ai-parse",
+  "func": "bunker_ai_parse",
+  "line": 310,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/copilot/ask",
+  "func": "api_copilot_ask",
+  "line": 621,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/copilot/export",
+  "func": "api_copilot_export",
+  "line": 699,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/copilot/history",
+  "func": "api_copilot_history",
+  "line": 660,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "GET"
+  ],
+  "path": "/copilot",
+  "func": "copilot_page",
+  "line": 604,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "POST"
+  ],
+  "path": "/parse-bdn/extract",
+  "func": "parse_bdn_extract",
+  "line": 248,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "GET"
+  ],
+  "path": "/parse-recap",
+  "func": "parse_recap_page",
+  "line": 31,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "POST"
+  ],
+  "path": "/parse-recap/extract",
+  "func": "parse_recap_extract",
+  "line": 61,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "POST"
+  ],
+  "path": "/parse-recap/extract-text",
+  "func": "parse_recap_extract_text",
+  "line": 293,
+  "priority": "P2"
+ },
+ {
+  "domain": "ai",
+  "method": [
+   "POST"
+  ],
+  "path": "/parse-recap/save",
+  "func": "parse_recap_save",
+  "line": 360,
+  "priority": "P2"
+ },
+ {
+  "domain": "alerts",
+  "method": [
+   "GET"
+  ],
+  "path": "/alerts",
+  "func": "alerts_page",
+  "line": 45,
+  "priority": "P2"
+ },
+ {
+  "domain": "alerts",
+  "method": [
+   "GET"
+  ],
+  "path": "/alerts/export",
+  "func": "alerts_export",
+  "line": 32,
+  "priority": "P2"
+ },
+ {
+  "domain": "alerts",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/alerts/ack-batch",
+  "func": "api_alerts_ack_batch",
+  "line": 95,
+  "priority": "P2"
+ },
+ {
+  "domain": "alerts",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/alerts/list",
+  "func": "api_alerts_list",
+  "line": 70,
+  "priority": "P2"
+ },
+ {
+  "domain": "alerts",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/alerts/pending-count",
+  "func": "api_alerts_pending_count",
+  "line": 86,
+  "priority": "P2"
+ },
+ {
+  "domain": "alerts",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/alerts/{alert_id}/ack",
+  "func": "api_alert_ack",
+  "line": 114,
+  "priority": "P2"
+ },
+ {
+  "domain": "imports",
+  "method": [
+   "GET"
+  ],
+  "path": "/import",
+  "func": "import_page",
+  "line": 182,
+  "priority": "P2"
+ },
+ {
+  "domain": "imports",
+  "method": [
+   "POST"
+  ],
+  "path": "/import/bunker",
+  "func": "import_bunker_upload",
+  "line": 250,
+  "priority": "P2"
+ },
+ {
+  "domain": "imports",
+  "method": [
+   "POST"
+  ],
+  "path": "/import/cargo",
+  "func": "import_cargo_upload",
+  "line": 227,
+  "priority": "P2"
+ },
+ {
+  "domain": "imports",
+  "method": [
+   "GET"
+  ],
+  "path": "/import/template/bunker",
+  "func": "import_template_bunker",
+  "line": 206,
+  "priority": "P2"
+ },
+ {
+  "domain": "imports",
+  "method": [
+   "GET"
+  ],
+  "path": "/import/template/cargo",
+  "func": "import_template_cargo",
+  "line": 197,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/infotech/authorize-url",
+  "func": "api_infotech_authorize_url",
+  "line": 82,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/infotech/contacts",
+  "func": "api_infotech_contacts",
+  "line": 92,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/infotech/create-contact",
+  "func": "api_infotech_create_contact",
+  "line": 142,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/infotech/diagnose",
+  "func": "api_infotech_diagnose",
+  "line": 75,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/infotech/invoice-status",
+  "func": "api_infotech_invoice_status",
+  "line": 190,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/infotech/map-contact",
+  "func": "api_infotech_map_contact",
+  "line": 132,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/infotech/pending",
+  "func": "api_infotech_pending",
+  "line": 177,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/infotech/push",
+  "func": "api_infotech_push",
+  "line": 220,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "GET"
+  ],
+  "path": "/infotech/callback",
+  "func": "infotech_callback",
+  "line": 35,
+  "priority": "P2"
+ },
+ {
+  "domain": "infotech",
+  "method": [
+   "GET"
+  ],
+  "path": "/integrations/infotech/callback",
+  "func": "infotech_callback",
+  "line": 35,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/board/bunker",
+  "func": "api_bunker_board",
+  "line": 194,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/positions/daily",
+  "func": "api_daily_position",
+  "line": 258,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/api/positions/daily/products",
+  "func": "api_daily_position_products",
+  "line": 268,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "POST"
+  ],
+  "path": "/api/positions/daily/save",
+  "func": "api_daily_position_save",
+  "line": 276,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/board/bunker",
+  "func": "bunker_board_page",
+  "line": 186,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/board/bunker/export",
+  "func": "bunker_board_export",
+  "line": 208,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/dashboard/positions",
+  "func": "positions_dashboard",
+  "line": 155,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/expo",
+  "func": "expo_view",
+  "line": 112,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/expo/export",
+  "func": "expo_export",
+  "line": 34,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/positions/daily",
+  "func": "daily_position_page",
+  "line": 237,
+  "priority": "P2"
+ },
+ {
+  "domain": "positions",
+  "method": [
+   "GET"
+  ],
+  "path": "/positions/daily/export",
+  "func": "daily_position_export",
+  "line": 291,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/admin/users",
+  "func": "tg_admin_users_page",
+  "line": 929,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/alerts",
+  "func": "tg_alerts_page",
+  "line": 1178,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/admin/list",
+  "func": "tg_api_admin_list",
+  "line": 948,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/admin/req-reject",
+  "func": "tg_api_admin_req_reject",
+  "line": 1028,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/admin/save",
+  "func": "tg_api_admin_save",
+  "line": 959,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/admin/toggle",
+  "func": "tg_api_admin_toggle",
+  "line": 1011,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/alerts/ack",
+  "func": "tg_api_alerts_ack",
+  "line": 1206,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/alerts/list",
+  "func": "tg_api_alerts_list",
+  "line": 1188,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/basedata",
+  "func": "tg_api_basedata",
+  "line": 1613,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/bunker-edit-token",
+  "func": "tg_api_bunker_edit_token",
+  "line": 224,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cargo/amend-submit",
+  "func": "tg_api_cargo_amend_submit",
+  "line": 672,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cargo/contract-submit",
+  "func": "tg_api_cargo_contract_submit",
+  "line": 656,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cash-receipts/delete",
+  "func": "tg_api_cash_receipts_delete",
+  "line": 2575,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cash-receipts/detail",
+  "func": "tg_api_cash_receipts_detail",
+  "line": 2489,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cash-receipts/list",
+  "func": "tg_api_cash_receipts_list",
+  "line": 2474,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cash-receipts/parse",
+  "func": "tg_api_cash_receipts_parse",
+  "line": 2507,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cash-receipts/save",
+  "func": "tg_api_cash_receipts_save",
+  "line": 2529,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cash-receipts/void",
+  "func": "tg_api_cash_receipts_void",
+  "line": 2561,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cp/attachment-delete",
+  "func": "tg_api_cp_attachment_delete",
+  "line": 1460,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cp/attachment-upload",
+  "func": "tg_api_cp_attachment_upload",
+  "line": 1411,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/api/cp/attachment/{att_id}",
+  "func": "tg_api_cp_attachment_download",
+  "line": 1476,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cp/attachments",
+  "func": "tg_api_cp_attachments",
+  "line": 1444,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cp/changes",
+  "func": "tg_api_cp_changes",
+  "line": 1487,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cp/decide",
+  "func": "tg_api_cp_decide",
+  "line": 1503,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cp/search",
+  "func": "tg_api_cp_search",
+  "line": 1375,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/cp/submit",
+  "func": "tg_api_cp_submit",
+  "line": 1386,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/credit-apps/decide",
+  "func": "tg_api_credit_apps_decide",
+  "line": 1996,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/credit-apps/detail",
+  "func": "tg_api_credit_apps_detail",
+  "line": 2023,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/credit-apps/list",
+  "func": "tg_api_credit_apps_list",
+  "line": 1983,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/credit-apps/manual-search",
+  "func": "tg_api_credit_apps_manual_search",
+  "line": 2047,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/credit-apps/manual-snapshot",
+  "func": "tg_api_credit_apps_manual_snapshot",
+  "line": 2061,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/credit-apps/manual-submit",
+  "func": "tg_api_credit_apps_manual_submit",
+  "line": 2081,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/credit-search",
+  "func": "tg_api_credit_search",
+  "line": 1938,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/deliver/list",
+  "func": "tg_api_deliver_list",
+  "line": 2131,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/deliver/parse-bdn",
+  "func": "tg_api_deliver_parse_bdn",
+  "line": 2146,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/deliver/submit",
+  "func": "tg_api_deliver_submit",
+  "line": 2196,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/deliver/submit-cargo",
+  "func": "tg_api_deliver_submit_cargo",
+  "line": 2164,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/export-token",
+  "func": "tg_api_export_token",
+  "line": 474,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/ar",
+  "func": "tg_api_finance_ar",
+  "line": 2287,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/credit-limits",
+  "func": "tg_api_finance_credit_limits",
+  "line": 2338,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/credit-update",
+  "func": "tg_api_finance_credit_update",
+  "line": 2349,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/fx",
+  "func": "tg_api_finance_fx",
+  "line": 2409,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/fx-set",
+  "func": "tg_api_finance_fx_set",
+  "line": 2424,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/infotech",
+  "func": "tg_api_finance_infotech",
+  "line": 2378,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/invoicing",
+  "func": "tg_api_finance_invoicing",
+  "line": 2267,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/receipt",
+  "func": "tg_api_finance_receipt",
+  "line": 2318,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/finance/receivables",
+  "func": "tg_api_finance_receivables",
+  "line": 2277,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/flows/decide",
+  "func": "tg_api_flows_decide",
+  "line": 1328,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/flows/detail",
+  "func": "tg_api_flows_detail",
+  "line": 1315,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/flows/list",
+  "func": "tg_api_flows_list",
+  "line": 1234,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/get-token",
+  "func": "tg_api_get_token",
+  "line": 435,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/inventory",
+  "func": "tg_api_inventory",
+  "line": 1701,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lt-agreements",
+  "func": "tg_api_lt_agreements",
+  "line": 1772,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/delete",
+  "func": "tg_api_lta_delete",
+  "line": 1840,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/detail",
+  "func": "tg_api_lta_detail",
+  "line": 1797,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/link",
+  "func": "tg_api_lta_link",
+  "line": 1859,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/linkable",
+  "func": "tg_api_lta_linkable",
+  "line": 1848,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/next-no",
+  "func": "tg_api_lta_next_no",
+  "line": 1876,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/save",
+  "func": "tg_api_lta_save",
+  "line": 1816,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/status",
+  "func": "tg_api_lta_status",
+  "line": 1831,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/lta/unlink",
+  "func": "tg_api_lta_unlink",
+  "line": 1867,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/menu",
+  "func": "tg_api_menu",
+  "line": 349,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/ops",
+  "func": "tg_api_ops",
+  "line": 1646,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/order-detail",
+  "func": "tg_api_order_detail",
+  "line": 548,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/order/activity",
+  "func": "tg_api_order_activity",
+  "line": 1114,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/order/attachment-upload",
+  "func": "tg_api_order_attachment_upload",
+  "line": 1080,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/api/order/attachment/{attach_id}",
+  "func": "tg_api_order_attachment_download",
+  "line": 1103,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/order/attachments",
+  "func": "tg_api_order_attachments",
+  "line": 1066,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/order/invoice-action",
+  "func": "tg_api_order_invoice_action",
+  "line": 1142,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/order/invoice-parse",
+  "func": "tg_api_order_invoice_parse",
+  "line": 1123,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/orders-context",
+  "func": "tg_api_orders_context",
+  "line": 860,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/orders/recycle",
+  "func": "tg_api_order_recycle",
+  "line": 1279,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/orders/soft-delete",
+  "func": "tg_api_order_soft_delete",
+  "line": 1257,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/ports/save",
+  "func": "tg_api_ports_save",
+  "line": 1883,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/prices",
+  "func": "tg_api_prices",
+  "line": 1913,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/so-token",
+  "func": "tg_api_so_token",
+  "line": 709,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/so/buyers",
+  "func": "tg_api_so_buyer_upsert",
+  "line": 820,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/so/buyers/delete",
+  "func": "tg_api_so_buyer_delete",
+  "line": 835,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/sysconfig",
+  "func": "tg_api_sysconfig",
+  "line": 1546,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/api/view-token",
+  "func": "tg_api_view_token",
+  "line": 875,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/basedata",
+  "func": "tg_basedata_page",
+  "line": 1595,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/cargo/form",
+  "func": "tg_cargo_form_page",
+  "line": 631,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/cash-receipts",
+  "func": "tg_cash_receipts_page",
+  "line": 2459,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/counterparties",
+  "func": "tg_counterparties_page",
+  "line": 1360,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/credit",
+  "func": "tg_credit_page",
+  "line": 1928,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/credit-apps",
+  "func": "tg_credit_apps_page",
+  "line": 1962,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/deliver",
+  "func": "tg_deliver_page",
+  "line": 2118,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/finance",
+  "func": "tg_finance_page",
+  "line": 2255,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/flows",
+  "func": "tg_flows_page",
+  "line": 1224,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/inventory",
+  "func": "tg_inventory_page",
+  "line": 1685,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/lt-agreements",
+  "func": "tg_lt_agreements_page",
+  "line": 1746,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/menu",
+  "func": "tg_menu",
+  "line": 343,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/open-web",
+  "func": "tg_open_web",
+  "line": 263,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/open/select",
+  "func": "tg_open_select",
+  "line": 286,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/open/{kind}",
+  "func": "tg_open_form",
+  "line": 291,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/ops",
+  "func": "tg_ops_page",
+  "line": 1631,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/orders",
+  "func": "tg_orders_page",
+  "line": 688,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/orders/bunker",
+  "func": "tg_orders_bunker",
+  "line": 855,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/orders/bunker/{bunker_id}/so",
+  "func": "tg_bunker_so_form",
+  "line": 724,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/orders/bunker/{bunker_id}/so/pdf",
+  "func": "tg_bunker_so_pdf",
+  "line": 762,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/tg/orders/bunker/{bunker_id}/so/preview",
+  "func": "tg_bunker_so_preview",
+  "line": 748,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/orders/cargo",
+  "func": "tg_orders_cargo",
+  "line": 850,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/prices",
+  "func": "tg_prices_page",
+  "line": 1902,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/recap/bunker",
+  "func": "tg_recap_bunker_launch",
+  "line": 219,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/recap/cargo",
+  "func": "tg_recap_cargo_launch",
+  "line": 214,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/so/buyers",
+  "func": "tg_so_buyers_page",
+  "line": 802,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/so/pdf/{doc_id}",
+  "func": "tg_so_pdf_file",
+  "line": 789,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "GET"
+  ],
+  "path": "/tg/sysconfig",
+  "func": "tg_sysconfig_page",
+  "line": 1523,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/webhook/telegram",
+  "func": "telegram_webhook",
+  "line": 239,
+  "priority": "P2"
+ },
+ {
+  "domain": "tg",
+  "method": [
+   "POST"
+  ],
+  "path": "/webhook/twilio",
+  "func": "twilio_webhook",
+  "line": 154,
+  "priority": "P2"
+ }
+]

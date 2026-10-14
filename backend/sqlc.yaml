@@ -1,0 +1,14 @@
+# sqlc 配置:口径 SQL 写在 db/queries/*.sql,由 sqlc 生成类型安全代码到 internal/store。
+# 动态拼接查询(订单列表筛选等)不走 sqlc,约定集中在各域 repository 层用 pgx 手写。
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "db/queries"
+    schema: "db/schema"
+    gen:
+      go:
+        package: "store"
+        out: "internal/store"
+        sql_package: "pgx/v5"
+        emit_json_tags: true
+        emit_pointers_for_null_types: true

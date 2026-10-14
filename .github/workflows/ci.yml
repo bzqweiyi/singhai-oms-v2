@@ -1,0 +1,78 @@
+# 阶段 0 CI:测试 → 后端构建 → 前端构建 → 制品镜像 → GHCR。
+# 保密要求:镜像内只允许二进制/dist/nginx,本文件含制品清单审计步骤。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  IMAGE: ghcr.io/bzqweiyi/singhai-oms-v2
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+          cache-dependency-path: backend/go.sum
+      - name: vet & build
+        working-directory: backend
+        run: |
+          go vet ./...
+          go build -o bin/server ./cmd/server
+      # 制品审计:镜像里不允许出现源码特征文件
+      - name: artifact audit (no source in binary image context)
+        run: |
+          if grep -rE '\.(go|vue)$' --include='*' docker/ 2>/dev/null; then
+            echo "源码文件混入了镜像构建目录" && exit 1
+          fi
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+
+  image:
+    needs: [backend, frontend]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: build artifacts (binary + dist)
+        run: |
+          cd backend && go build -o bin/server ./cmd/server && cd ..
+          cd frontend && npm ci && npm run build && cd ..
+      # 审计:确认打包上下文里没有源码与 git 历史
+      - name: source audit
+        run: |
+          test ! -d .git && true
+          ! find docker -type f \( -name '*.go' -o -name '*.vue' -o -name '.git' \) | grep .
+      - name: docker build & push
+        run: |
+          TAG=${{ github.sha }}
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+          docker build -f docker/Dockerfile -t ${{ env.IMAGE }}:${TAG} -t ${{ env.IMAGE }}:latest .
+          docker push ${{ env.IMAGE }}:${TAG}
+          docker push ${{ env.IMAGE }}:latest

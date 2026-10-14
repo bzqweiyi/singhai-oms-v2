@@ -1,0 +1,24 @@
+# PG 16 开发与联调用;生产同版本单机 docker 部署。
+# 时区 UTC——应用层做 CST 展示(与旧系统语义一致)。
+services:
+  postgres:
+    image: postgres:16
+    container_name: singhai-pg
+    environment:
+      POSTGRES_USER: singhai
+      POSTGRES_PASSWORD: singhai
+      POSTGRES_DB: singhai
+      TZ: UTC
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # 初始 schema 由迁移工具导入(阶段 0 任务),勿在此自动挂载执行
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U singhai -d singhai"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
